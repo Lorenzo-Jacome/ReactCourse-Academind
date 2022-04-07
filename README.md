@@ -9,3 +9,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux)
 * Create a default / demo react project with - `npx create-react-app [project name]`
 * Start the server with - `npm start`
 * Reads into package.json file and installs all necessary dependencies. Used when cloning / copying a previously created project. - `npm install`
+### 4 - React State & Working with Events
+#### Annotations
+* On event listeners, when passing a function, you just reference the functio, don't call it. Meaning don't do: function() | Do: function.
+* Hooks (like useState), always start with "use". They can only be called inside react components.

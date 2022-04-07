@@ -1,8 +1,10 @@
-import ExpenseItem from "./components/ExpenseItem";
+import React from 'react';
+import NewExpense from './components/NewExpense/NewExpense';
 
-function App() {
+import Expenses from './components/Expenses/Expenses';
+
+const App = () => {
   const expenses = [
-    { id: 'e0', title: 'Game Pass', amount: 247.99, date: new Date(2021, 2, 28), },
     {
       id: 'e1',
       title: 'Toilet Paper',
@@ -24,17 +26,17 @@ function App() {
     },
   ];
 
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, "Let's get started!"),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+
   return (
     <div>
-      <h2>Let's get started!</h2>
-      <ExpenseItem 
-        title={expenses[0].title} 
-        amount={expenses[0].amount} 
-        date={expenses[0].date}
-      ></ExpenseItem>
-      <ExpenseItem></ExpenseItem>
-      <ExpenseItem></ExpenseItem>
-      <ExpenseItem></ExpenseItem>
+      <NewExpense />
+      <Expenses items={expenses} />
     </div>
   );
 }
