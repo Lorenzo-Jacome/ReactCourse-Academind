@@ -18,3 +18,5 @@ React - The Complete Guide (incl Hooks, React Router, Redux)
 #### Annotations 
 * Add key prop to ANY element when listing it. Required when working with lists on react. Each key must have a unique value.
     * Example: `key={expense.id}`
+* Use `{}` for dynamic expressions
+* You can't use simple conditionals in dynamic expressions. You have to use [Ternary Operations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
