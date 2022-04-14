@@ -14,3 +14,7 @@ React - The Complete Guide (incl Hooks, React Router, Redux)
 * On event listeners, when passing a function, you just reference the functio, don't call it. Meaning don't do: function() | Do: function.
 * Hooks (like useState), always start with "use". They can only be called inside react components.
 * You can pass information to children components with props, but you can also pass it from children to parents when creating a function from the parent and passing a reference to the children, where it can be called. 
+### 5 - Rendering Lists & Conditional Content 
+#### Annotations 
+* Add key prop to ANY element when listing it. Required when working with lists on react. Each key must have a unique value.
+    * Example: `key={expense.id}`
