@@ -20,3 +20,6 @@ React - The Complete Guide (incl Hooks, React Router, Redux)
     * Example: `key={expense.id}`
 * Use `{}` for dynamic expressions
 * You can't use simple conditionals in dynamic expressions. You have to use [Ternary Operations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+## Extra commands and information
+### Start a new project
+* `npx create-react-app app-name` - To start a new project. [According to React](https://es.reactjs.org/docs/create-a-new-react-app.html#create-react-app) this is the best way to start a new application.
